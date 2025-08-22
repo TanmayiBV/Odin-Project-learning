@@ -1,0 +1,25 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 620px;
+    width: 620px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    border: 1px solid black;
+    flex-grow: 1;
+}
+
+.box{
+    border: 1px solid black;
+    flex-grow: 1;
+    transition: background-color 0.3s ease;
+}
