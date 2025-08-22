@@ -5,6 +5,7 @@ elem1.innerText = "Hey, I m red"
 parent.appendChild(elem1)
 const elem2 = document.createElement("div")
 elem2.classList.add("parent2")
+elem2.setAttribute("id", "divparent")
 elem2.style.border = "black"
 elem2.style.backgroundColor = "pink"
 parent.appendChild(elem2)
@@ -16,3 +17,14 @@ const p = document.createElement("p")
 p.innerText="ME TOO"
 div.appendChild(h1)
 div.appendChild(p)
+
+div.addEventListener("click", function(e){
+    console.log(e.target)
+    console.log(e.type)
+    e.target.style.backgroundColor = "blue"
+    e.stopPropagation()
+})
+
+document.body.addEventListener("click", function(e){
+    console.log("DIV was clicked!")
+})
