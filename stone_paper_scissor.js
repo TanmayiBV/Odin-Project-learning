@@ -77,3 +77,5 @@ if (humanScore>compScore){
 else{
     console.log("COMPUTER IS THE WINNER")
 }
+
+
